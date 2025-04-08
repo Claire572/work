@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        #error {
+            color: red;
+            margin-bottom: 15px;
+            display: none;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 15px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .error-border {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h2>Login Form</h2>
+    <div id="error"></div>
+    <form id="form" action="" method="get">
+        <div>
+            <label for="name">Name:</label>
+            <input id="name" type="text" name="name" required>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input id="password" type="password" name="password" required>
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+    
+    <script src="form.js"></script>
+</body>
+</html>
